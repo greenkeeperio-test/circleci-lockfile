@@ -16,7 +16,7 @@ jobs:
       - run: sudo ls -la /root/.npm
       - run: sudo ls -la /root/.npm/_cacache
       - run: sudo ls -la /root/.npm/_cacache/tmp
-      - run: sudo npm install -g git://github.com/greenkeeperio/greenkeeper-lockfile#feat/monorepos
+      - run: npm install npm install -g --unsafe-perm git://github.com/greenkeeperio/greenkeeper-lockfile#feat/monorepos
       - run: greenkeeper-lockfile-update
       - run: npm test
       - run: greenkeeper-lockfile-upload
