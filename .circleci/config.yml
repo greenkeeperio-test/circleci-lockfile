@@ -11,7 +11,12 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: npm install -g git://github.com/greenkeeperio/greenkeeper-lockfile#feat/monorepos
+      - run: sudo whoami
+      - run: sudo ls -la /root
+      - run: sudo ls -la /root/.npm
+      - run: sudo ls -la /root/.npm/_cacache
+      - run: sudo ls -la /root/.npm/_cacache/tmp
+      - run: sudo npm install -g git://github.com/greenkeeperio/greenkeeper-lockfile#feat/monorepos
       - run: greenkeeper-lockfile-update
       - run: npm test
       - run: greenkeeper-lockfile-upload
