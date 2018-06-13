@@ -9,7 +9,7 @@ jobs:
       - image: circleci/node:10
 
     steps:
-      - checkout
+      - run: sudo mkdir -p /root/.npm/_cacache/tmp
       - run: npm install
       - run: sudo whoami
       - run: sudo ls -la /root
