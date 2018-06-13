@@ -15,6 +15,6 @@ jobs:
       - run: source ~/.bashrc
       - run: npm install
       - run: npm install -g git://github.com/greenkeeperio/greenkeeper-lockfile#feat/monorepos
-      - run: greenkeeper-lockfile-update
+      - run: /home/circleci/.npm-global/bin/greenkeeper-lockfile-update
       - run: npm test
-      - run: greenkeeper-lockfile-upload
+      - run: /home/circleci/.npm-global/bin/greenkeeper-lockfile-upload
