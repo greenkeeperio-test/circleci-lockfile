@@ -9,14 +9,8 @@ jobs:
       - image: circleci/node:10
 
     steps:
-      - run: sudo mkdir -p /root/.npm/_cacache/tmp
       - run: npm install
-      - run: sudo whoami
-      - run: sudo ls -la /root
-      - run: sudo ls -la /root/.npm
-      - run: sudo ls -la /root/.npm/_cacache
-      - run: sudo ls -la /root/.npm/_cacache/tmp
-      - run: npm install npm install -g --unsafe-perm git://github.com/greenkeeperio/greenkeeper-lockfile#feat/monorepos
+      - run: npm install -g --unsafe-perm git://github.com/greenkeeperio/greenkeeper-lockfile#feat/monorepos
       - run: greenkeeper-lockfile-update
       - run: npm test
       - run: greenkeeper-lockfile-upload
