@@ -23,7 +23,7 @@
     "moment": "^2.22.2",
     "neighbourhoodie-test-package": "^29.0.0",
     "preact": "^8.2.9",
-    "react": "^16.4.0",
+    "react": "^16.6.2",
     "react-dom": "^16.4.0"
   },
   "devDependencies": {
