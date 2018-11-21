@@ -27,7 +27,7 @@
     "react-dom": "^16.4.0"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^3.4.7",
+    "@storybook/addon-a11y": "^4.0.8",
     "@storybook/cli": "^4.0.8",
     "@storybook/react": "^4.0.8",
     "@types/jest": "^23.0.2",
