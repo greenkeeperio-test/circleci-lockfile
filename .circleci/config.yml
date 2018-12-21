@@ -10,6 +10,6 @@ jobs:
 
     steps:
       - run: npm install
-      - run: npx -p greenkeeperio/greenkeeper-lockfile#feat/monorepos greenkeeper-lockfile-update
+      - run: npx -p greenkeeperio/greenkeeper-lockfile
       - run: npm test
-      - run: npx -p greenkeeperio/greenkeeper-lockfile#feat/monorepos greenkeeper-lockfile-upload
+      - run: npx -p greenkeeperio/greenkeeper-lockfile
