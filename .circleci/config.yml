@@ -10,6 +10,4 @@ jobs:
 
     steps:
       - run: npm install
-      - run: npx -p greenkeeperio/greenkeeper-lockfile
       - run: npm test
-      - run: npx -p greenkeeperio/greenkeeper-lockfile
